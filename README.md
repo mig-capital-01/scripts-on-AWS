@@ -6,10 +6,10 @@ All codes and scripts shared on AWS instances
 
 # launching and connecting to AWS EC2: https://medium.com/@praneeth.jm/launching-and-connecting-to-an-aws-ec2-instance-6678f660bbe6
 
-# Install Python 3.6 and set it as default python version:
- sudo yum install python36
+# Install Python 3.7 and set it as default python version:
+ sudo yum install python37
 
- alternatives --set python /usr/bin/python3.6
+ alternatives --set python /usr/bin/python3.7
  python --version
 
 
@@ -39,7 +39,7 @@ All codes and scripts shared on AWS instances
 #  Install pyodbc:
   
   sudo yum install gcc-c++
-  sudo yum install python-devel
+  sudo yum install python3-devel
   sudo yum install unixODBC-devel
   sudo pip install pyodbc
   
