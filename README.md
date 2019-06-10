@@ -56,7 +56,13 @@ All codes and scripts shared on AWS instances
 # install selenium (other packages that could be installed via pip):
 
  pip install selenium --user
-  
+ 
+# install libgcc to ensure sql driver run:
+ conda update libgcc
+ 
+ # example of setting sql driver on ec2 instance:
+ pyodbc.connect("DRIVER={ODBC Driver 13 for SQL Server};SERVER=myserver;DATABASE=mydatabase;UID=username;PWD=password")
+ 
 
 # copy them from my local machine into the home folder of the ec2 instance:
  scp -i D:/ec2/test.pem D:/ec2/test.py ec2-user@ec2-18-191-31-0.us-east-2.compute.amazonaws.com:/home/ec2-user
