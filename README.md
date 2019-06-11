@@ -68,9 +68,7 @@ All codes and scripts shared on AWS instances
  scp -i D:/ec2/test.pem D:/ec2/test.py ec2-user@ec2-18-191-31-0.us-east-2.compute.amazonaws.com:/home/ec2-user
 
 # connect Jupyter notebook to instance:
-https://www.datacamp.com/community/tutorials/deep-learning-jupyter-aws
-https://medium.com/@alexjsanchez/python-3-notebooks-on-aws-ec2-in-15-mostly-easy-steps-2ec5e662c6c6
-
+https://chrisalbon.com/aws/basics/run_project_jupyter_on_amazon_ec2/
 Note, for an Amazon Linux AMI, the user name is ec2-user instead of ubuntu.
 
 
