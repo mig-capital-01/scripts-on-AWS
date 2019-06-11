@@ -58,7 +58,7 @@ All codes and scripts shared on AWS instances
  pip install selenium --user
  
 # install libgcc to ensure sql driver run:
- conda update libgcc
+ conda install libgcc
  
  # example of setting sql driver on ec2 instance:
  pyodbc.connect("DRIVER={ODBC Driver 13 for SQL Server};SERVER=myserver;DATABASE=mydatabase;UID=username;PWD=password")
@@ -67,5 +67,10 @@ All codes and scripts shared on AWS instances
 # copy them from my local machine into the home folder of the ec2 instance:
  scp -i D:/ec2/test.pem D:/ec2/test.py ec2-user@ec2-18-191-31-0.us-east-2.compute.amazonaws.com:/home/ec2-user
 
+# connect Jupyter notebook to instance:
+https://www.datacamp.com/community/tutorials/deep-learning-jupyter-aws
+https://medium.com/@alexjsanchez/python-3-notebooks-on-aws-ec2-in-15-mostly-easy-steps-2ec5e662c6c6
+
+Note, for an Amazon Linux AMI, the user name is ec2-user instead of ubuntu.
 
 
